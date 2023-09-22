@@ -24,14 +24,12 @@ const Index = () => {
             {process.env.NEXT_PUBLIC_PTTPLC_IOS_VERSION}
           </a>
           <a
-            href="app-release.apk"
+            href="jupiter.apk"
             className="flex items-center lg:text-lg text-[20px]"
           >
             <img src="android.png" className="w-8 mr-2" />
-            <a href="app-release.apk">
-              Install Jupiter(PTTPLC) on Android Version{" "}
-              {process.env.NEXT_PUBLIC_PTTPLC_ANDROID_VERSION}
-            </a>
+            Install Jupiter(PTTPLC) on Android Version{" "}
+            {process.env.NEXT_PUBLIC_PTTPLC_ANDROID_VERSION}
           </a>
           <div className="mt-8 text-sm">PTT Digital Solution Co., Ltd.</div>
         </div>
