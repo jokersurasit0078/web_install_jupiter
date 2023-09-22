@@ -11,7 +11,7 @@
             <key>kind</key>
             <string>software-package</string>
             <key>url</key>
-            <string>https://hermes-persona-thaipost.netlify.app/HermesPersona.ipa</string>
+            <string>https://web-install-jupiter.vercel.app/HermesPersona.ipa</string>
           </dict>
         </array>
         <key>metadata</key>
