@@ -8,7 +8,7 @@ const Index = () => {
   ];
   const ios = link.join("");
   return (
-    <div className="bg-twilight-blue flex justify-center items-center h-screen">
+    <div className="bg-twilight-blue flex justify-center items-center h-screen p-4">
       <div className="max-w-md m-auto">
         <div className="max-w-xs m-auto">
           <img src="jupiter_top.png" draggable={false} />
@@ -17,7 +17,7 @@ const Index = () => {
         <div className="flex flex-col justify-center items-center">
           <a
             href={ios}
-            className="flex items-center mb-4 mt-4 lg:text-lg text-[20px]"
+            className="flex items-center mb-4 mt-4 lg:text-lg text-[16px]"
           >
             <img src="ios.png" className="w-8 mr-2" />
             Install Jupiter(PTTPLC) on iOS Version{" "}
@@ -25,7 +25,7 @@ const Index = () => {
           </a>
           <a
             href="jupiter.apk"
-            className="flex items-center lg:text-lg text-[20px]"
+            className="flex items-center lg:text-lg text-[16px]"
           >
             <img src="android.png" className="w-8 mr-2" />
             Install Jupiter(PTTPLC) on Android Version{" "}
