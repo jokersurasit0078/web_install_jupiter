@@ -6,7 +6,7 @@ const Index = () => {
     "?action=download-manifest",
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest.plist`,
   ];
-  const dateUpdateLasted = '25/09/2023 16:50 (3)';
+  const dateUpdateLasted = '25/09/2023 17:50 (4)';
   const ios = link.join("");
   return (
     <div className="bg-twilight-blue flex justify-center items-center h-screen p-4">
