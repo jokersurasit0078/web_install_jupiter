@@ -6,8 +6,14 @@ const Index = () => {
     "?action=download-manifest",
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest.plist`,
   ];
-  const dateUpdateLasted = '25/09/2023 17:50 (4)';
+  const link_dev = [
+    "itms-services://",
+    "?action=download-manifest",
+    `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
+  ];
+  const dateUpdateLasted = '26/09/2023 14:40 (1)';
   const ios = link.join("");
+  const ios_dev = link_dev.join("");
   return (
     <div className="bg-twilight-blue flex justify-center items-center h-screen p-4">
       <div className="max-w-md m-auto">
@@ -36,6 +42,14 @@ const Index = () => {
             {'Last updated on : ' + dateUpdateLasted}
           </div>
           <div className="mt-6 text-sm">PTT Digital Solution Co., Ltd.</div>
+        </div>
+        <div className="flex flex-row justify-center items-center mt-2">
+          <a href={ios_dev}>
+            <img src="ios.png" className="w-6 mr-2" />
+          </a>
+          <a href="jupiter-dev.apk">
+            <img src="android.png" className="w-6" />
+          </a>
         </div>
       </div>
     </div>
