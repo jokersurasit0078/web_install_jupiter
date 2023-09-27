@@ -11,11 +11,12 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
-  const dateUpdateLasted = '26/09/2023 14:40 (1)';
+  const dateUpdateLasted = '27/09/2023 16:40 (1)';
   const ios = link.join('');
   const ios_dev = link_dev.join('');
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
+      <title>Install PTTPLC</title>
       <div className='max-w-md m-auto'>
         <div className='max-w-xs m-auto'>
           <img src='jupiter_top.png' draggable={false} />

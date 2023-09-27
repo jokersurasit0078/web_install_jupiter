@@ -11,8 +11,8 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
-  const dateUpdateLastediOS = '26/09/2023 14:40 (1)';
-  const dateUpdateLastedAndroid = '27/09/2023 11:30 (1)';
+  const dateUpdateLastediOS = '27/09/2023 16:40 (1)';
+  const dateUpdateLastedAndroid = '27/09/2023 16:40 (1)';
   const ios = link.join('');
   const ios_dev = link_dev.join('');
 
@@ -37,6 +37,7 @@ const Index = () => {
 
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
+      <title>Install PTTPLC Dev</title>
       <div className='max-w-md m-auto'>
         <div className='max-w-xs m-auto'>
           <img src='jupiter_top.png' draggable={false} />
