@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Index = () => {
   const link = [
@@ -11,10 +11,15 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
-  const dateUpdateLastediOS = '27/09/2023 16:40 (1)';
-  const dateUpdateLastedAndroid = '27/09/2023 16:40 (1)';
+  const dateUpdateLastediOS = '03/10/2023 17:40 (1)';
+  const dateUpdateLastedAndroid = '03/10/2023 17:40 (1)';
   const ios = link.join('');
   const ios_dev = link_dev.join('');
+  const [dateNow, setDateNow] = useState(new Date);
+
+  useEffect(() => {
+    setDateNow(new Date);
+  }, []);
 
   function isDateEqualNow(dateString) {
     // Format 'DD/MM/YYYY'
@@ -24,14 +29,12 @@ const Index = () => {
     const day = parseInt(parts[0]);
     const month = parseInt(parts[1]) - 1; // Months are zero-based (0-11)
     const year = parseInt(parts[2]);
-    const inputDate = new Date(year, month, day);
-    // Get the current date
-    const currentDate = new Date();
+    const inputDate = new Date(year, month, day);;
     // Compare the input date with the current date
     return (
-      inputDate.getDate() === currentDate.getDate() &&
-      inputDate.getMonth() === currentDate.getMonth() &&
-      inputDate.getFullYear() === currentDate.getFullYear()
+      inputDate.getDate() === dateNow.getDate() &&
+      inputDate.getMonth() === dateNow.getMonth() &&
+      inputDate.getFullYear() === dateNow.getFullYear()
     );
   }
 
@@ -49,7 +52,7 @@ const Index = () => {
             className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold'
           >
             <img src='ios.png' className='w-8 mr-2' />
-            Install Jupiter(PTTPLC-DEV) on iOS Version{' '}
+            PTTPLC-DEV on iOS Version{' '}
             {process.env.NEXT_PUBLIC_PTTPLC_IOS_VERSION}
           </a>
           <a
@@ -57,7 +60,7 @@ const Index = () => {
             className='flex items-center lg:text-lg text-[16px] font-bold'
           >
             <img src='android.png' className='w-8 mr-2' />
-            Install Jupiter(PTTPLC-DEV) on Android Version{' '}
+            PTTPLC-DEV on Android Version{' '}
             {process.env.NEXT_PUBLIC_PTTPLC_ANDROID_VERSION}
           </a>
           <div className={'mt-4 text-[16px] font-bold' + (isDateEqualNow(dateUpdateLastediOS) ? ' text-red-500' : '')}>
