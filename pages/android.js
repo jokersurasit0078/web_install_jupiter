@@ -23,27 +23,20 @@ const Index = () => {
         </div>
         <img src='logo.png' className='my-8 px-4 max-w-xs m-auto' />
         <div className='flex flex-col justify-center items-center'>
-          <a
-            href='jupiter.apk'
-            className='flex items-center lg:text-lg text-[16px] font-bold'
-          >
-            <img src='android.png' className='w-8 mr-2' />
-            Install Jupiter(PTTPLC) on Android Version{' '}
-            {process.env.NEXT_PUBLIC_PTTPLC_ANDROID_VERSION}
-          </a>
+          <div className='bg-lime-200 px-4 rounded-xl'>
+            <a
+              href='jupiter.apk'
+              className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
+            >
+              <img src='android.png' className='w-8 mr-2' />
+              Install Jupiter(PTTPLC) for Android
+            </a>
+          </div>
           <div className='mt-4 text-[16px] font-bold'>
             {'Last updated on : ' + dateUpdateLasted}
           </div>
           <div className='mt-6 text-sm'>PTT Digital Solution Co., Ltd.</div>
         </div>
-        {/* <div className='flex flex-row justify-center items-center mt-2'>
-          <a href={ios_dev}>
-            <img src='ios.png' className='w-6 mr-2' />
-          </a>
-          <a href='jupiter-dev.apk'>
-            <img src='android.png' className='w-6' />
-          </a>
-        </div> */}
       </div>
     </div>
   );

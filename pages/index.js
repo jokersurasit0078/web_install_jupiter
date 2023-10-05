@@ -23,22 +23,25 @@ const Index = () => {
         </div>
         <img src='logo.png' className='my-8 px-4 max-w-xs m-auto' />
         <div className='flex flex-col justify-center items-center'>
-          <a
-            href={ios}
-            className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold'
-          >
-            <img src='ios.png' className='w-8 mr-2' />
-            Install Jupiter(PTTPLC) on iOS Version{' '}
-            {process.env.NEXT_PUBLIC_PTTPLC_IOS_VERSION}
-          </a>
-          <a
-            href='jupiter.apk'
-            className='flex items-center lg:text-lg text-[16px] font-bold'
-          >
-            <img src='android.png' className='w-8 mr-2' />
-            Install Jupiter(PTTPLC) on Android Version{' '}
-            {process.env.NEXT_PUBLIC_PTTPLC_ANDROID_VERSION}
-          </a>
+          <div className='bg-blue-400 px-4 rounded-xl'>
+            <a
+              href={ios}
+              className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-white'
+            >
+              <img src='ios.png' className='w-8 mr-2' />
+              Install Jupiter(PTTPLC) for iOS
+            </a>
+          </div>
+          <div className='py-2'/>
+          <div className='bg-lime-200 px-4 rounded-xl'>
+            <a
+              href='jupiter.apk'
+              className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
+            >
+              <img src='android.png' className='w-8 mr-2' />
+              Install Jupiter(PTTPLC) for Android
+            </a>
+          </div>
           <div className='mt-4 text-[16px] font-bold'>
             {'Last updated on : ' + dateUpdateLasted}
           </div>
