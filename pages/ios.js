@@ -11,7 +11,7 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
-  const dateUpdateLasted = '05/10/2023 12:00 (1)';
+  const dateUpdateLasted = '05/10/2023 17:30 (2)';
   const ios = link.join('');
   const ios_dev = link_dev.join('');
   return (
