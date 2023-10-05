@@ -11,8 +11,8 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
-  const dateUpdateLastediOS = '03/10/2023 17:40 (1)';
-  const dateUpdateLastedAndroid = '03/10/2023 17:40 (1)';
+  const dateUpdateLastediOS = '05/10/2023 12:00 (1)';
+  const dateUpdateLastedAndroid = '05/10/2023 12:00 (1)';
   const ios = link.join('');
   const ios_dev = link_dev.join('');
   const [dateNow, setDateNow] = useState(new Date);
