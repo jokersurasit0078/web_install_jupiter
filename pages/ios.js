@@ -6,14 +6,8 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest.plist`,
   ];
-  const link_dev = [
-    'itms-services://',
-    '?action=download-manifest',
-    `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
-  ];
   const dateUpdateLasted = '06/10/2023 11:20 (1)';
   const ios = link.join('');
-  const ios_dev = link_dev.join('');
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
       <title>Install PTTPLC</title>

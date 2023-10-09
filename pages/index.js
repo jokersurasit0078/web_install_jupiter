@@ -7,14 +7,10 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest.plist`,
   ];
-  const link_dev = [
-    'itms-services://',
-    '?action=download-manifest',
-    `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
-  ];
-  const dateUpdateLasted = '06/10/2023 11:20 (1)';
+  const jupiterApk = 'jupiter-09102023.apk';
+  const dateUpdateLastediOS = '06/10/2023 11:20 (1)';
+  const dateUpdateLastedAndroid = '09/10/2023 16:20 (1)';
   const ios = link.join('');
-  const ios_dev = link_dev.join('');
 
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
@@ -38,26 +34,21 @@ const Index = () => {
             <div className='py-2' />
             <div className='bg-lime-200 px-4 rounded-xl'>
               <a
-                href='jupiter.apk'
+                href={jupiterApk}
                 className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
               >
                 <img src='android.png' className='w-8 mr-2' />
                 Install Jupiter(PTTPLC) for Android
               </a>
             </div>
-            <div className='mt-4 text-[16px] font-bold'>
-              {'Last updated on : ' + dateUpdateLasted}
+            <div className={'mt-4 text-[16px] font-bold'}>
+              {'Last iOS updated on : ' + dateUpdateLastediOS}
+            </div>
+            <div className={'text-[16px] font-bold'} >
+              {'Last Android updated on : ' + dateUpdateLastedAndroid}
             </div>
             <div className='mt-6 text-sm'>PTT Digital Solution Co., Ltd.</div>
           </div>
-          {/* <div className='flex flex-row justify-center items-center mt-2'>
-          <a href={ios_dev}>
-            <img src='ios.png' className='w-6 mr-2' />
-          </a>
-          <a href='jupiter-dev.apk'>
-            <img src='android.png' className='w-6' />
-          </a>
-        </div> */}
         </div>
       </RefectProvider>
     </div>

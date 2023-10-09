@@ -2,19 +2,14 @@ import React, { useEffect, useState } from 'react';
 import RefectProvider from "../provider/RefetchProvider"
 
 const Index = () => {
-  const link = [
-    'itms-services://',
-    '?action=download-manifest',
-    `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest.plist`,
-  ];
   const link_dev = [
     'itms-services://',
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
+  const jupiterApk = 'jupiter-dev-09102023.apk';
   const dateUpdateLastediOS = '06/10/2023 11:20 (1)';
-  const dateUpdateLastedAndroid = '06/10/2023 11:20 (1)';
-  const ios = link.join('');
+  const dateUpdateLastedAndroid = '09/10/2023 16:20 (1)';
   const ios_dev = link_dev.join('');
   const [dateNow, setDateNow] = useState(new Date);
 
@@ -49,22 +44,27 @@ const Index = () => {
           </div>
           <img src='logo.png' className='my-8 px-4 max-w-xs m-auto' />
           <div className='flex flex-col justify-center items-center'>
-            <a
-              href={ios_dev}
-              className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold'
-            >
-              <img src='ios.png' className='w-8 mr-2' />
-              PTTPLC-DEV on iOS Version{' '}
-              {process.env.NEXT_PUBLIC_PTTPLC_IOS_VERSION}
-            </a>
-            <a
-              href='jupiter-dev.apk'
-              className='flex items-center lg:text-lg text-[16px] font-bold'
-            >
-              <img src='android.png' className='w-8 mr-2' />
-              PTTPLC-DEV on Android Version{' '}
-              {process.env.NEXT_PUBLIC_PTTPLC_ANDROID_VERSION}
-            </a>
+            <div className='bg-blue-400 px-4 rounded-xl'>
+              <a
+                href={ios_dev}
+                className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-white'
+              >
+                <img src='ios.png' className='w-8 mr-2' />
+                PTTPLC-DEV on iOS Version{' '}
+                {process.env.NEXT_PUBLIC_PTTPLC_IOS_VERSION}
+              </a>
+            </div>
+            <div className='py-2' />
+            <div className='bg-lime-200 px-4 rounded-xl'>
+              <a
+                href={jupiterApk}
+                className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
+              >
+                <img src='android.png' className='w-8 mr-2' />
+                PTTPLC-DEV on Android Version{' '}
+                {process.env.NEXT_PUBLIC_PTTPLC_ANDROID_VERSION}
+              </a>
+            </div>
             <div className={'mt-4 text-[16px] font-bold' + (isDateEqualNow(dateUpdateLastediOS) ? ' text-red-500' : '')}>
               {'Last iOS updated on : ' + dateUpdateLastediOS}
             </div>

@@ -1,19 +1,8 @@
 import React from 'react';
 
 const Index = () => {
-  const link = [
-    'itms-services://',
-    '?action=download-manifest',
-    `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest.plist`,
-  ];
-  const link_dev = [
-    'itms-services://',
-    '?action=download-manifest',
-    `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
-  ];
+  const jupiterApk = 'jupiter-09102023.apk';
   const dateUpdateLasted = '06/10/2023 11:20 (1)';
-  const ios = link.join('');
-  const ios_dev = link_dev.join('');
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
       <title>Install PTTPLC</title>
@@ -25,7 +14,7 @@ const Index = () => {
         <div className='flex flex-col justify-center items-center'>
           <div className='bg-lime-200 px-4 rounded-xl'>
             <a
-              href='jupiter.apk'
+              href={jupiterApk}
               className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
             >
               <img src='android.png' className='w-8 mr-2' />
