@@ -8,8 +8,8 @@ const Index = () => {
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
   const jupiterApk = 'jupiter-dev-09102023-2.apk';
-  const dateUpdateLastediOS = '06/10/2023 11:20 (1)';
-  const dateUpdateLastedAndroid = '09/10/2023 17:20 (2)';
+  const dateUpdateLastediOS = '09/10/2023 17:50 (1)';
+  const dateUpdateLastedAndroid = '09/10/2023 17:50 (1)';
   const ios_dev = link_dev.join('');
   const [dateNow, setDateNow] = useState(new Date);
 
