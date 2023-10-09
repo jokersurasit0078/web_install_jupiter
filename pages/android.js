@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Index = () => {
-  const jupiterApk = 'jupiter-09102023.apk';
-  const dateUpdateLasted = '06/10/2023 11:20 (1)';
+  const jupiterApk = 'jupiter-09102023-2.apk';
+  const dateUpdateLasted = '09/10/2023 17:20 (2)';
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
       <title>Install PTTPLC</title>
