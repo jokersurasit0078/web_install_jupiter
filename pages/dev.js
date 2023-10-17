@@ -7,11 +7,12 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
-  const jupiterApk = 'jupiter-dev-12102023.apk';
-  const dateUpdateLastediOS = '16/10/2023 10:00 (1)';
-  const dateUpdateLastedAndroid = '12/10/2023 17:30 (1)';
+  const jupiterApk = 'jupiter-dev-17102023.apk';
+  const dateUpdateLastediOS = '17/10/2023 14:40 (1)';
+  const dateUpdateLastedAndroid = '17/10/2023 14:40 (1)';
   const ios_dev = link_dev.join('');
   const [dateNow, setDateNow] = useState(new Date);
+  const versiobCode = '1.0.1+2';
 
   useEffect(() => {
     setDateNow(new Date);
@@ -51,7 +52,7 @@ const Index = () => {
               >
                 <img src='ios.png' className='w-8 mr-2' />
                 PTTPLC-DEV on iOS Version{' '}
-                {process.env.NEXT_PUBLIC_PTTPLC_IOS_VERSION}
+                {versiobCode}
               </a>
             </div>
             <div className='py-2' />
@@ -62,7 +63,7 @@ const Index = () => {
               >
                 <img src='android.png' className='w-8 mr-2' />
                 PTTPLC-DEV on Android Version{' '}
-                {process.env.NEXT_PUBLIC_PTTPLC_ANDROID_VERSION}
+                {versiobCode}
               </a>
             </div>
             <div className={'mt-4 text-[16px] font-bold' + (isDateEqualNow(dateUpdateLastediOS) ? ' text-red-500' : '')}>
