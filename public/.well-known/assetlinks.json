@@ -1,7 +1,7 @@
 [{
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-        "namespace": "jupiter",
+        "namespace": "android_app",
         "package_name": "com.pttdigital.jupiter.store",
         "sha256_cert_fingerprints":
         [
