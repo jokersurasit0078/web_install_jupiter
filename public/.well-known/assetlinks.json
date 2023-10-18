@@ -1,0 +1,12 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+        "namespace": "jupiter",
+        "package_name": "com.pttdigital.jupiter.store",
+        "sha256_cert_fingerprints":
+        [
+            "A2:AC:B0:7E:9E:1C:E0:0D:6D:31:E2:DA:FE:45:8B:87:DE:43:44:89:C1:ED:25:54:7C:B2:11:3C:B3:00:19:E4",
+            "C3:60:56:6C:24:77:9C:AD:B0:86:7C:15:7A:77:1B:F7:D9:0F:81:21:50:76:CE:4B:2B:53:1C:F3:1E:7F:18:8C"
+        ]
+    }
+}]
