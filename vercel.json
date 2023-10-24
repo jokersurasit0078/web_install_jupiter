@@ -1,0 +1,7 @@
+{
+    "routes": {
+        "/response-payment": {
+            "methods": ["POST"]
+        }
+    }
+}
