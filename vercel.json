@@ -1,7 +1,9 @@
 {
-    "routes": {
-        "/response-payment": {
-            "methods": ["POST"]
+    "routes": [
+        {
+            "src": "/response-payment", 
+            "methods": ["POST", "GET"],
+            "dest": "response-payment.js"
         }
-    }
+    ]
 }
