@@ -3,11 +3,6 @@
         {
             "src": "/response-payment", 
             "methods": ["POST", "GET"]
-        },
-        {   
-            "src": "/.*", 
-            "methods": ["POST", "GET"],
-            "dest": "https://www.google.com/"
         }
     ]
 }
