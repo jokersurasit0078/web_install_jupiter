@@ -7,9 +7,9 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
-  const jupiterApk = 'jupiter-dev-17102023.apk';
+  const jupiterApk = 'jupiter-dev-25102023.apk';
   const dateUpdateLastediOS = '17/10/2023 14:40 (1)';
-  const dateUpdateLastedAndroid = '17/10/2023 14:40 (1)';
+  const dateUpdateLastedAndroid = '25/10/2023 09:00 (1)';
   const ios_dev = link_dev.join('');
   const [dateNow, setDateNow] = useState(new Date);
   const versiobCode = '1.0.1+2';

@@ -2,7 +2,8 @@
     "routes": [
         {
             "src": "/response-payment", 
-            "methods": ["POST", "GET"]
+            "methods": ["POST", "GET"],
+            "dest": "https://www.google.com/"
         }
     ]
 }
