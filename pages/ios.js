@@ -9,6 +9,11 @@ const Index = () => {
   ];
   const dateUpdateLasted = '03/11/2023 19:00';
   const ios = link.join('');
+
+  const copyClipboard = () => {
+    navigator.clipboard.writeText(process.env.NEXT_PUBLIC_HOSTNAME + 'ios');
+  }
+
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
       <title>Update PTTPLC</title>
@@ -28,6 +33,9 @@ const Index = () => {
                 Update Jupiter(PTTPLC) for iOS v{process.env.NEXT_PUBLIC_PTTPLC_IOS_VERSION}
               </a>
             </div>
+            <button onClick={copyClipboard} className='mt-4 bg-red-300 p-2 rounded-xl text-white text-[16px]'>
+              กรณีที่ไม่สามารถดาวน์โหลดได้ สามารถคลิกที่นี่เพื่อนำลิงค์ไปเปิดที่เว็บบราวเซอร์ข้างนอกได้
+            </button>
             <div className='mt-4 text-[16px] font-bold'>
               {'Last updated on : ' + dateUpdateLasted}
             </div>
