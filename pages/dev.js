@@ -7,12 +7,12 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-dev.plist`,
   ];
-  const jupiterApk = 'jupiter-dev-31102023.apk';
-  const dateUpdateLastediOS = '31/10/2023 09:00 (1)';
-  const dateUpdateLastedAndroid = '31/10/2023 09:00 (1)';
+  const jupiterApk = 'jupiter-dev-03112023.apk';
+  const dateUpdateLastediOS = '03/11/2023 12:00 (1)';
+  const dateUpdateLastedAndroid = '03/11/2023 12:00 (1)';
   const ios_dev = link_dev.join('');
   const [dateNow, setDateNow] = useState(new Date);
-  const versiobCode = '1.0.1+2';
+  const versionCode = '1.0.1+2';
 
   useEffect(() => {
     setDateNow(new Date);
@@ -51,7 +51,7 @@ const Index = () => {
                 className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-white'
               >
                 <img src='ios.png' className='w-8 mr-2' />
-                PTTPLC-DEV on iOS Version{' '}
+                PTTPLC-DEV on iOS Version {versionCode}
                 {versiobCode}
               </a>
             </div>
@@ -62,7 +62,7 @@ const Index = () => {
                 className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
               >
                 <img src='android.png' className='w-8 mr-2' />
-                PTTPLC-DEV on Android Version{' '}
+                PTTPLC-DEV on Android Version {versionCode}
                 {versiobCode}
               </a>
             </div>
