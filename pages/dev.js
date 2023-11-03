@@ -52,7 +52,6 @@ const Index = () => {
               >
                 <img src='ios.png' className='w-8 mr-2' />
                 PTTPLC-DEV on iOS Version {versionCode}
-                {versiobCode}
               </a>
             </div>
             <div className='py-2' />
@@ -63,7 +62,6 @@ const Index = () => {
               >
                 <img src='android.png' className='w-8 mr-2' />
                 PTTPLC-DEV on Android Version {versionCode}
-                {versiobCode}
               </a>
             </div>
             <div className={'mt-4 text-[16px] font-bold' + (isDateEqualNow(dateUpdateLastediOS) ? ' text-red-500' : '')}>
