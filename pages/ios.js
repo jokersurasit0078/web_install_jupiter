@@ -7,7 +7,6 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest.plist`,
   ];
-  const dateUpdateLasted = '15/12/2023 18:30';
   const ios = link.join('');
   const textButton = '* กรณีที่ไม่สามารถดาวน์โหลดได้ สามารถคลิกที่นี่เพื่อนำลิงค์ไปเปิดที่เว็บบราวเซอร์ข้างนอกได้';
   const copyRef = useRef();
