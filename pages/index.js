@@ -7,9 +7,13 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest.plist`,
   ];
-  const jupiterApk = 'jupiter-02022024.apk';
-  const dateUpdateLastediOS = '13/02/2024 18:05 (1)';
-  const dateUpdateLastedAndroid = '13/02/2024 18:05 (1)';
+  const jupiterApk = 'jupiter-15122023.apk';
+  // NEW
+  // const dateUpdateLastediOS = '13/02/2024 18:05 (1)';
+  // const dateUpdateLastedAndroid = '13/02/2024 18:05 (1)';
+  // OLD
+  const dateUpdateLastediOS = '15/12/2023 18:30 (1)';
+  const dateUpdateLastedAndroid = '15/12/2023 18:30 (1)';
   const ios = link.join('');
 
   return (
