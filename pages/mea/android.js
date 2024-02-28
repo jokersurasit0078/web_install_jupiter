@@ -1,14 +1,15 @@
 import React, { useRef, useState } from 'react';
-import RefectProvider from "../provider/RefetchProvider"
+import RefectProvider from "../../provider/RefetchProvider"
 
 const MainAndroidMea = () => {
-  const jupiterApk = 'mea/jupiter-mea.apk';
+  const jupiterApk = 'jupiter-mea.apk';
   const textButton = '* กรณีที่ไม่สามารถดาวน์โหลดได้ สามารถคลิกที่นี่เพื่อนำลิงค์ไปเปิดที่เว็บบราวเซอร์ข้างนอกได้';
   const copyRef = useRef();
   const [isCopy, setIsCopy] = useState(false);
+  const prepath = '../';
 
   const copyClipboard = () => {
-    navigator.clipboard.writeText(process.env.NEXT_PUBLIC_HOSTNAME + '/mea/android');
+    navigator.clipboard.writeText(process.env.NEXT_PUBLIC_MEA_HOSTNAME + '/android');
     copyRef.current.innerText = `Copied ✅`;
     setIsCopy(true);
   }
@@ -19,16 +20,16 @@ const MainAndroidMea = () => {
       <RefectProvider>
         <div className='max-w-md m-auto'>
           <div className='max-w-xs m-auto'>
-            <img src='jupiter_top.png' draggable={false} />
+            <img src={`${prepath}jupiter_top.png`}  draggable={false} />
           </div>
-          <img src='logo.png' className='my-8 px-4 max-w-xs m-auto' />
+          <img src={`${prepath}logo.png`}  className='my-8 px-4 max-w-xs m-auto' />
           <div className='flex flex-col justify-center items-center'>
             <div className='bg-lime-200 px-4 rounded-xl'>
               <a
                 href={jupiterApk}
                 className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
               >
-                <img src='android.png' className='w-8 mr-2' />
+                <img src={`${prepath}android.png`} className='w-8 mr-2' />
                 Update Jupiter(PTTPLC) for Android v{process.env.NEXT_PUBLIC_MEA_ANDROID_VERSION}
               </a>
             </div>

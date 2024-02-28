@@ -1,19 +1,20 @@
 import React, { useRef, useState } from 'react';
-import RefectProvider from "../provider/RefetchProvider"
+import RefectProvider from "../../provider/RefetchProvider"
 
 const MainIosMea = () => {
   const link = [
     'itms-services://',
     '?action=download-manifest',
-    `&url=${process.env.NEXT_PUBLIC_HOSTNAME}mea/manifest-mea-dev.plist`,
+    `&url=${process.env.NEXT_PUBLIC_MEA_HOSTNAME}/manifest-mea-dev.plist`,
   ];
   const ios = link.join('');
   const textButton = '* กรณีที่ไม่สามารถดาวน์โหลดได้ สามารถคลิกที่นี่เพื่อนำลิงค์ไปเปิดที่เว็บบราวเซอร์ข้างนอกได้';
   const copyRef = useRef();
   const [isCopy, setIsCopy] = useState(false);
+  const prepath = '../';
 
   const copyClipboard = () => {
-    navigator.clipboard.writeText(process.env.NEXT_PUBLIC_HOSTNAME + '/mea/ios');
+    navigator.clipboard.writeText(process.env.NEXT_PUBLIC_MEA_HOSTNAME + '/ios');
     copyRef.current.innerText = `Copied ✅`;
     setIsCopy(true);
   }
@@ -24,16 +25,16 @@ const MainIosMea = () => {
       <RefectProvider>
         <div className='max-w-md m-auto'>
           <div className='max-w-xs m-auto'>
-            <img src='jupiter_top.png' draggable={false} />
+            <img src={`${prepath}jupiter_top.png`} draggable={false} />
           </div>
-          <img src='logo.png' className='my-8 px-4 max-w-xs m-auto' />
+          <img src={`${prepath}logo.png`} className='my-8 px-4 max-w-xs m-auto' />
           <div className='flex flex-col justify-center items-center'>
             <div className='bg-blue-400 px-4 rounded-xl'>
               <a
                 href={ios}
                 className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-white'
               >
-                <img src='ios.png' className='w-8 mr-2' />
+                <img src={`${prepath}ios.png`} className='w-8 mr-2' />
                 Update Jupiter(MEA) for iOS v{process.env.NEXT_PUBLIC_MEA_IOS_VERSION}
               </a>
             </div>

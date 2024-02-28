@@ -1,16 +1,17 @@
-import RefectProvider from "../provider/RefetchProvider"
+import RefectProvider from "../../provider/RefetchProvider"
 import React, { } from 'react';
 
 const MainMea = () => {
   const link = [
     'itms-services://',
     '?action=download-manifest',
-    `&url=${process.env.NEXT_PUBLIC_HOSTNAME}manifest-mea-dev.plist`,
+    `&url=${process.env.NEXT_PUBLIC_MEA_HOSTNAME}/manifest-mea-dev.plist`,
   ];
-  const jupiterApk = 'mea/jupiter-mea.apk';
+  const jupiterApk = 'jupiter-mea.apk';
   const dateUpdateLastediOS = '28/02/2024 00:00 (1)';
   const dateUpdateLastedAndroid = '28/02/2024 00:00 (1)';
   const ios = link.join('');
+  const prepath = '../';
 
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
@@ -18,16 +19,16 @@ const MainMea = () => {
       <RefectProvider>
         <div className='max-w-md m-auto'>
           <div className='max-w-xs m-auto'>
-            <img src='jupiter_top.png' draggable={false} />
+            <img src={`${prepath}jupiter_top.png`} draggable={false} />
           </div>
-          <img src='logo.png' className='my-8 px-4 max-w-xs m-auto' />
+          <img src={`${prepath}logo.png`} className='my-8 px-4 max-w-xs m-auto' />
           <div className='flex flex-col justify-center items-center'>
             <div className='bg-blue-400 px-4 rounded-xl'>
               <a
                 href={ios}
                 className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-white'
               >
-                <img src='ios.png' className='w-8 mr-2' />
+                <img src={`${prepath}ios.png`} className='w-8 mr-2' />
                 Install Jupiter(MEA) for iOS
               </a>
             </div>
@@ -37,7 +38,7 @@ const MainMea = () => {
                 href={jupiterApk}
                 className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
               >
-                <img src='android.png' className='w-8 mr-2' />
+                <img src={`${prepath}android.png`} className='w-8 mr-2' />
                 Install Jupiter(MEA) for Android
               </a>
             </div>
