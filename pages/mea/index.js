@@ -1,7 +1,7 @@
 import RefectProvider from "../../provider/RefetchProvider"
 import React, { } from 'react';
 
-const MainMea = () => {
+const Index = () => {
   const link = [
     'itms-services://',
     '?action=download-manifest',
@@ -56,4 +56,4 @@ const MainMea = () => {
   );
 };
 
-export default MainMea;
+export default Index;
