@@ -11,7 +11,7 @@
             <key>kind</key>
             <string>software-package</string>
             <key>url</key>
-            <string>https://web-install-jupiter.vercel.app/mea/jupiter-mea.ipa</string>
+            <string>https://web-install-jupiter.vercel.app/jupiter-dev.ipa</string>
           </dict>
         </array>
         <key>metadata</key>
