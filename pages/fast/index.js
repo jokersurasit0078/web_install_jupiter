@@ -8,9 +8,10 @@ const Index = () => {
     `&url=${process.env.NEXT_PUBLIC_FAST_HOSTNAME}/manifest-fast.plist`,
   ];
   // const jupiterApk = 'jupiter-mea.apk';
-  const dateUpdateLasted = '01/03/2024 14:00 (1)';
+  const dateUpdateLasted = '04/03/2024 16:20 (1)';
   const ios = link.join('');
   const prepath = '../';
+  const description = 'FAST : PLC TEST ROUTE PLANNER';
 
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
@@ -22,7 +23,7 @@ const Index = () => {
           </div>
           <img src={`${prepath}logo.png`} className='my-8 px-4 max-w-xs m-auto' />
           <div className='flex flex-col justify-center items-center'>
-            <div className='bg-blue-400 px-4 rounded-xl'>
+            <div className='bg-blue-400 px-4 rounded-xl shadow-2xl'>
               <a
                 href={ios}
                 className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-white'
@@ -41,7 +42,10 @@ const Index = () => {
                 Install Jupiter for Android (FAST)
               </a>
             </div> */}
-            <div className={'mt-4 text-[16px] font-bold'}>
+            <div className={'mt-4 text-[16px] font-bold text-red-700'}>
+              {description}
+            </div>
+            <div className={'mt-1 text-[16px] font-bold'}>
               {'Last updated on : ' + dateUpdateLasted}
             </div>
             <div className='mt-6 text-sm'>PTT Digital Solution Co., Ltd.</div>
