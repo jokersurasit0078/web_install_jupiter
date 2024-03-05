@@ -8,10 +8,10 @@ const Index = () => {
     `&url=${process.env.NEXT_PUBLIC_FAST_HOSTNAME}/manifest-fast.plist`,
   ];
   // const jupiterApk = 'jupiter-mea.apk';
-  const dateUpdateLasted = '04/03/2024 16:20 (1)';
+  const dateUpdateLasted = '05/03/2024 15:35 (1)';
   const ios = link.join('');
   const prepath = '../';
-  const description = 'FAST : PLC TEST ROUTE PLANNER';
+  const description = 'DESCRIPTION CER:PLC|ORG:JU0001|BRANCH:TEST ROUTE PLANNER';
 
   return (
     <div className='bg-twilight-blue flex justify-center items-center h-screen p-4'>
