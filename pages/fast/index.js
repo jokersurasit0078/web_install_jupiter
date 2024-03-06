@@ -7,8 +7,8 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_FAST_HOSTNAME}/manifest-fast.plist`,
   ];
-  // const jupiterApk = 'jupiter-mea.apk';
-  const dateUpdateLasted = '06/03/2024 00:00 (1)';
+  const jupiterApk = '/fast/app-release-fast.apk';
+  const dateUpdateLasted = '06/03/2024 09:30 (1)';
   const ios = link.join('');
   const prepath = '../';
   const description = 'DESCRIPTION CER:PLC|ORG:JU0001|BRANCH:PRE-MERGE-RFID-ROUTE';
@@ -23,26 +23,26 @@ const Index = () => {
           </div>
           <img src={`${prepath}logo.png`} className='my-8 px-4 max-w-xs m-auto' />
           <div className='flex flex-col justify-center items-center'>
-            <div className='bg-blue-400 px-4 rounded-xl shadow-2xl'>
+            <div className='bg-blue-400 px-3 rounded-xl shadow-2xl'>
               <a
                 href={ios}
-                className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-white'
+                className='flex items-center mb-2 mt-2 lg:text-lg text-[16px] font-bold text-white'
               >
                 <img src={`${prepath}ios.png`} className='w-8 mr-2' />
                 Install Jupiter for iOS (FAST)
               </a>
             </div>
             <div className='py-2' />
-            {/* <div className='bg-lime-200 px-4 rounded-xl'>
+            <div className='bg-lime-200 px-3 rounded-xl shadow-2xl'>
               <a
                 href={jupiterApk}
-                className='flex items-center mb-4 mt-4 lg:text-lg text-[16px] font-bold text-black'
+                className='flex items-center mb-2 mt-2 lg:text-lg text-[16px] font-bold text-black'
               >
                 <img src={`${prepath}android.png`} className='w-8 mr-2' />
                 Install Jupiter for Android (FAST)
               </a>
-            </div> */}
-            <div className={'mt-4 text-[16px] font-bold text-red-700'}>
+            </div>
+            <div className={'mt-4 text-[12px] font-bold text-red-700 text-center'}>
               {description}
             </div>
             <div className={'mt-1 text-[16px] font-bold'}>
