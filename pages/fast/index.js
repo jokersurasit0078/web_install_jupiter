@@ -8,7 +8,7 @@ const Index = () => {
     `&url=${process.env.NEXT_PUBLIC_FAST_HOSTNAME}/manifest-fast.plist`,
   ];
   const jupiterApk = '/fast/app-release-fast.apk';
-  const dateUpdateLasted = '06/03/2024 09:50 (2)';
+  const dateUpdateLasted = '07/03/2024 10:50 (1)';
   const ios = link.join('');
   const prepath = '../';
   const description = 'DESCRIPTION CER:PLC|ORG:JU0001|BRANCH:PRE-MERGE-RFID-ROUTE';
