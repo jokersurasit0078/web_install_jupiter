@@ -8,8 +8,8 @@ const Index = () => {
     `&url=${process.env.NEXT_PUBLIC_MEA_HOSTNAME}/manifest-mea-dev.plist`,
   ];
   const jupiterApk = 'jupiter-mea.apk';
-  const dateUpdateLastediOS = '01/03/2024 10:00 (1)';
-  const dateUpdateLastedAndroid = '01/03/2024 10:00 (1)';
+  const dateUpdateLastediOS = '11/03/2024 17:00 (1)';
+  const dateUpdateLastedAndroid = '11/03/2024 17:00 (1)';
   const ios = link.join('');
   const prepath = '../';
 
