@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import RefectProvider from "../../provider/RefetchProvider"
 
 const MainAndroidMea = () => {
-  const jupiterApk = 'jupiter-mea.apk';
+  const jupiterApk = '/mea/jupiter-mea.apk';
   const textButton = '* กรณีที่ไม่สามารถดาวน์โหลดได้ สามารถคลิกที่นี่เพื่อนำลิงค์ไปเปิดที่เว็บบราวเซอร์ข้างนอกได้';
   const copyRef = useRef();
   const [isCopy, setIsCopy] = useState(false);

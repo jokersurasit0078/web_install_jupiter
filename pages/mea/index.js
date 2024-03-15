@@ -7,9 +7,9 @@ const Index = () => {
     '?action=download-manifest',
     `&url=${process.env.NEXT_PUBLIC_MEA_HOSTNAME}/manifest-mea-dev.plist`,
   ];
-  const jupiterApk = 'jupiter-mea.apk';
-  const dateUpdateLastediOS = '15/03/2024 11:25 (1)';
-  const dateUpdateLastedAndroid = '15/03/2024 11:25 (1)';
+  const jupiterApk = '/mea/jupiter-mea.apk';
+  const dateUpdateLastediOS = '15/03/2024 11:40 (1)';
+  const dateUpdateLastedAndroid = '15/03/2024 11:40 (1)';
   const ios = link.join('');
   const prepath = '../';
 
